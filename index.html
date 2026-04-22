@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orto Cafe | Premium UAE Cafe Experience</title>
+    <meta
+      name="description"
+      content="Orto Cafe offers specialty coffee, brunch, desserts, and premium dine-in experiences in the UAE."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <div class="container nav-wrap">
+        <a href="#home" class="logo">Orto Cafe</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+        <nav class="site-nav" id="siteNav">
+          <a href="#home" data-i18n="navHome">Home</a>
+          <a href="#menu" data-i18n="navMenu">Menu</a>
+          <a href="#reservations" data-i18n="navReservations">Reservations</a>
+          <a href="#billing" data-i18n="navBilling">Billing</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="lang-toggle" id="langToggle" type="button">AR</button>
+          <a href="#reservations" class="btn btn-gold" data-i18n="bookTable">Book a Table</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker" data-i18n="heroKicker">Dubai's Signature Cafe Lounge</p>
+            <h1 data-i18n="heroTitle">Crafted Coffee, Elegant Brunch, Timeless Hospitality</h1>
+            <p data-i18n="heroDesc">
+              A refined all-day cafe experience in the UAE, blending specialty brews, artisan desserts, and warm family dining.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-dark" href="#menu" data-i18n="viewMenu">View Menu</a>
+              <a class="btn btn-outline" href="#billing" data-i18n="orderNow">Order Now</a>
+            </div>
+            <div class="hero-chips">
+              <span data-i18n="hoursChip">Open Daily | 7:00 AM - 12:00 AM</span>
+              <span data-i18n="locationChip">Jumeirah, Dubai, UAE</span>
+            </div>
+          </div>
+          <div class="hero-image" role="img" aria-label="Premium cafe interior"></div>
+        </div>
+      </section>
+
+      <section class="section" id="menu">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="featuredMenu">Featured Menu</h2>
+            <p data-i18n="featuredMenuDesc">Explore chef-curated drinks and dishes made fresh every day.</p>
+          </div>
+          <div class="menu-controls">
+            <input id="menuSearch" type="search" placeholder="Search menu..." data-i18n-placeholder="searchPlaceholder" />
+            <select id="menuCategory" aria-label="Filter categories">
+              <option value="all" data-i18n="allCategory">All</option>
+              <option value="coffee" data-i18n="coffeeCategory">Coffee</option>
+              <option value="breakfast" data-i18n="breakfastCategory">Breakfast</option>
+              <option value="desserts" data-i18n="dessertsCategory">Desserts</option>
+              <option value="mocktails" data-i18n="mocktailsCategory">Mocktails</option>
+              <option value="juices" data-i18n="juicesCategory">Juices</option>
+            </select>
+          </div>
+          <div class="menu-grid" id="menuGrid"></div>
+        </div>
+      </section>
+
+      <section class="section alt" id="reservations">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="reservationTitle">Table Reservations</h2>
+            <p data-i18n="reservationDesc">Reserve your perfect table in seconds.</p>
+          </div>
+          <form id="reservationForm" class="reservation-form">
+            <label><span data-i18n="nameLabel">Customer Name</span><input name="customerName" required /></label>
+            <label><span data-i18n="mobileLabel">Mobile Number</span><input name="mobile" required /></label>
+            <label><span data-i18n="guestsLabel">Number of Guests</span><input name="guests" type="number" min="1" max="20" required /></label>
+            <label><span data-i18n="dateLabel">Date</span><input name="date" type="date" required /></label>
+            <label><span data-i18n="timeLabel">Time</span><input name="time" type="time" required /></label>
+            <label>
+              <span data-i18n="tablePrefLabel">Table Preference</span>
+              <select name="tablePreference" required>
+                <option value="" data-i18n="selectOption">Select</option>
+                <option value="indoor" data-i18n="indoor">Indoor</option>
+                <option value="outdoor" data-i18n="outdoor">Outdoor</option>
+                <option value="family" data-i18n="family">Family Area</option>
+              </select>
+            </label>
+            <label class="full"><span data-i18n="specialRequestLabel">Special Request</span><textarea name="specialRequest" rows="3"></textarea></label>
+            <button class="btn btn-gold full" type="submit" data-i18n="confirmBooking">Confirm Booking</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="billing">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="billingTitle">Live Billing & POS</h2>
+            <p data-i18n="billingDesc">Professional invoice experience for dine-in and takeaway orders.</p>
+          </div>
+          <div class="billing-layout">
+            <article class="invoice-panel" id="invoicePanel">
+              <div class="invoice-header">
+                <h3>Orto Cafe POS</h3>
+                <p id="invoiceNumberDisplay">ORT-2026-0001</p>
+              </div>
+              <div class="invoice-meta">
+                <label><span data-i18n="customerName">Customer Name</span><input id="invoiceCustomer" /></label>
+                <label><span data-i18n="tableNo">Table No.</span><input id="invoiceTable" /></label>
+                <label><span data-i18n="orderType">Order Type</span>
+                  <select id="orderType">
+                    <option value="dine-in" data-i18n="dineIn">Dine-in</option>
+                    <option value="takeaway" data-i18n="takeaway">Takeaway</option>
+                    <option value="delivery" data-i18n="delivery">Delivery</option>
+                  </select>
+                </label>
+                <label><span data-i18n="paymentMethod">Payment Method</span>
+                  <select id="paymentMethod">
+                    <option value="cash" data-i18n="cash">Cash</option>
+                    <option value="card" data-i18n="card">Card</option>
+                    <option value="apple-pay" data-i18n="applePay">Apple Pay</option>
+                    <option value="google-pay" data-i18n="googlePay">Google Pay</option>
+                    <option value="wallet" data-i18n="wallet">Wallet</option>
+                  </select>
+                </label>
+                <label><span data-i18n="invoiceDateTime">Date & Time</span><input id="invoiceDateTime" readonly /></label>
+              </div>
+
+              <div class="bill-table-wrap">
+                <table class="bill-table">
+                  <thead>
+                    <tr>
+                      <th data-i18n="item">Item</th>
+                      <th data-i18n="qty">Qty</th>
+                      <th data-i18n="unit">Unit</th>
+                      <th data-i18n="total">Total</th>
+                      <th data-i18n="actions">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="billItems"></tbody>
+                </table>
+                <div id="billEmptyState" class="empty-state" data-i18n="emptyBill">No items yet. Add products from the menu.</div>
+              </div>
+
+              <div class="totals-box">
+                <label><span data-i18n="discount">Discount (AED)</span><input id="discountInput" type="number" min="0" step="0.01" value="0" /></label>
+                <label><span data-i18n="serviceCharge">Service Charge %</span><input id="serviceChargeInput" type="number" min="0" step="1" value="10" /></label>
+                <div class="total-line"><span data-i18n="subtotal">Subtotal</span><strong id="subtotalVal">AED 0.00</strong></div>
+                <div class="total-line"><span data-i18n="vat">VAT (5%)</span><strong id="vatVal">AED 0.00</strong></div>
+                <div class="total-line grand"><span data-i18n="grandTotal">Grand Total</span><strong id="grandTotalVal">AED 0.00</strong></div>
+              </div>
+
+              <div class="invoice-actions no-print">
+                <button class="btn btn-outline" id="clearBillBtn" type="button" data-i18n="clearBill">Clear Bill</button>
+                <button class="btn btn-dark" id="printBillBtn" type="button" data-i18n="printBill">Print Bill</button>
+                <button class="btn btn-gold" id="generateReceiptBtn" type="button" data-i18n="generateReceipt">Generate Receipt</button>
+                <button class="btn btn-outline" id="sendWhatsAppBtn" type="button" data-i18n="sendWhatsApp">Send on WhatsApp</button>
+                <button class="btn btn-dark" id="saveInvoiceBtn" type="button" data-i18n="saveInvoice">Save Invoice</button>
+              </div>
+              <p class="thank-you-note" data-i18n="thankYou">Thank you for choosing Orto Cafe. We look forward to serving you again.</p>
+            </article>
+
+            <aside class="dashboard-panel" id="dashboard">
+              <h3 data-i18n="adminDashboard">Admin Dashboard</h3>
+              <div class="kpi-grid" id="kpiGrid"></div>
+              <div class="daily-summary" id="dailySummary"></div>
+              <h4 data-i18n="recentBookings">Recent Bookings</h4>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th data-i18n="nameLabel">Name</th>
+                      <th data-i18n="dateLabel">Date</th>
+                      <th data-i18n="timeLabel">Time</th>
+                      <th data-i18n="guestsLabel">Guests</th>
+                    </tr>
+                  </thead>
+                  <tbody id="recentBookingsBody"></tbody>
+                </table>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="about">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="aboutTitle">About Orto Cafe</h2>
+            <p data-i18n="aboutText">
+              Orto Cafe began as a neighborhood coffee concept and evolved into a premium family-friendly destination across the UAE, known for specialty coffee, artisanal brunch, and signature desserts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <h2 data-i18n="contactTitle">Contact Us</h2>
+            <p data-i18n="address">Al Wasl Road, Jumeirah, Dubai, UAE</p>
+            <p>+971 50 123 4567</p>
+            <p>WhatsApp: +971 50 123 4567</p>
+            <p>hello@ortocafe.ae</p>
+            <div class="socials">
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="TikTok">TikTok</a>
+              <a href="#" aria-label="Facebook">Facebook</a>
+            </div>
+          </div>
+          <div class="map-placeholder" aria-label="Google map placeholder" data-i18n="mapPlaceholder">
+            Google Map Embed Placeholder
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Orto Cafe</h4>
+          <p data-i18n="hoursChip">Open Daily | 7:00 AM - 12:00 AM</p>
+          <p data-i18n="locationChip">Jumeirah, Dubai, UAE</p>
+        </div>
+        <div>
+          <p data-i18n="invoiceNote">All prices include quality service standards. VAT shown separately at billing.</p>
+          <p>&copy; <span id="year"></span> Orto Cafe. <span data-i18n="allRights">All rights reserved.</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="./data/menuData.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
