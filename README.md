@@ -9,13 +9,13 @@
 
 ### Crafted Coffee, Elegant Brunch, Timeless Hospitality — Dubai's Signature Cafe Lounge.
 
-**Live Demo:** https://orto-cafe-01.vercel.app
+**LIVE DEMO:** https://orto-cafe-01.vercel.app
 
-> Add screenshots here — drag and drop images into this file on GitHub.
+SCREENSHOTS-
 
 ---
 
-## About
+## ABOUT
 
 Orto Cafe is a full-stack cafe management web application built for a premium UAE dining context. It combines a bilingual customer-facing experience (Arabic / English with full RTL support) with an operational backend — featuring a live menu, table reservation system, and a POS billing dashboard with admin analytics.
 
@@ -23,7 +23,7 @@ Located in Jumeirah, Dubai. Open daily 7:00 AM – 12:00 AM.
 
 ---
 
-## How It Works
+## HOW IT WORKS
 
 ```
 Customer Side                          Operations Side
@@ -37,7 +37,7 @@ Contact / About                        Track orders, revenue, bookings
 
 ---
 
-## Features
+## FEATURES
 
 **Bilingual Interface — Arabic / English**
 - One-click language toggle (AR / EN) in the navbar
@@ -73,7 +73,7 @@ Contact / About                        Track orders, revenue, bookings
 
 ---
 
-## Tech Stack
+## TECH STACK
 
 | Layer | Technology |
 |---|---|
@@ -86,7 +86,7 @@ Contact / About                        Track orders, revenue, bookings
 
 ---
 
-## Installation
+## INSTALLATION
 
 **Prerequisites:** Node.js 18+
 
@@ -101,7 +101,7 @@ Open `http://localhost:3000` in your browser.
 
 ---
 
-## Roadmap
+## ROADMAP
 
 - [ ] Backend integration (orders and reservations persisted to database)
 - [ ] WhatsApp confirmation on booking
@@ -111,7 +111,7 @@ Open `http://localhost:3000` in your browser.
 
 ---
 
-## Author
+## AUTHOR
 
 **SHAHINA S** — Full Stack Developer & AI Engineer, UAE
 
