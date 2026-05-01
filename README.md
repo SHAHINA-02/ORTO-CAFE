@@ -11,7 +11,7 @@
 
 **LIVE DEMO:** https://orto-cafe-01.vercel.app
 
-SCREENSHOTS-
+SCREENSHOTS-https://github.com/SHAHINA-02/ORTO-CAFE/blob/bfe585015fa70f1733556f6090e8ebdaadad8e95/ORTO-SC/Screenshot%202026-04-30%20190923.png
 
 ---
 
