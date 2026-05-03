@@ -10,8 +10,16 @@
 ### Crafted Coffee, Elegant Brunch, Timeless Hospitality — Dubai's Signature Cafe Lounge.
 
 **LIVE DEMO:** https://orto-cafe-01.vercel.app
+!
 
-SCREENSHOTS-https:https://github.com/SHAHINA-02/ORTO-CAFE/tree/bfe585015fa70f1733556f6090e8ebdaadad8e95/ORTO-SC
+SCREENSHOTS-
+## Screenshots
+
+<p align="center">
+  <img src="C:\Users\USER\Downloads\ORTO-SC" />
+  <img src="images/screenshot2.png" width="32%" />
+  <img src="images/screenshot3.png" width="32%" />
+</p>
 
 ---
 
